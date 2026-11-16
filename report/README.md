@@ -60,8 +60,8 @@ python -m mkdocs serve
 
 ![build 与 deploy 均成功的 Actions 运行记录](images/05-actions-success.png)
 
-- 首次部署对应的提交：`（待填：commit 链接）`
-- 首次部署的 Actions 运行：`（待填：run 链接）`
+- 首次部署对应的提交：<https://github.com/czj-daniel-knox/SAD-homework03-202611/commit/a369533>
+- 首次部署的 Actions 运行：<https://github.com/czj-daniel-knox/SAD-homework03-202611/actions/runs/43835824938>
 
 ### 2.6 网站访问与四页导航检查
 
@@ -71,12 +71,18 @@ python -m mkdocs serve
 
 ### 2.7 第二次推送与自动更新验证
 
-在 `docs/index.md` 增加了一句本人编写、可辨认的文字，提交并推送到 `main`。这次**没有**点击手动部署，而是观察 `push` 是否自动触发新的运行——结果是新的运行自动出现并成功，刷新网站后新增文字立即生效（用无痕窗口排除缓存干扰）。
+在 `docs/index.md` 末尾增加了一句本人编写、可辨认的文字：`自动部署验证：这是第二次推送后更新的内容。` 提交并推送到 `main`。这次**没有**点击手动部署，而是观察 `push` 是否自动触发新的运行——结果是新的运行（`event=push`，非手动）自动出现并成功，刷新网站后新增文字立即生效（用无痕窗口/带随机参数访问排除缓存干扰）。
 
-- 第二次推送对应的提交：`（待填：commit 链接）`
-- 第二次自动部署成功的 Actions 运行：`（待填：run 链接）`
+- 第二次推送对应的提交：<https://github.com/czj-daniel-knox/SAD-homework03-202611/commit/ec2bf82>
+- 第二次自动部署成功的 Actions 运行：<https://github.com/czj-daniel-knox/SAD-homework03-202611/actions/runs/43837241288>
 
-![第二次 push 触发的成功运行记录，以及网站出现新增文字的效果](images/07-second-deploy.png)
+第二次推送触发的运行记录（`event=push`，非手动触发）：
+
+![第二次 push 触发的成功运行记录](images/07-second-run.png)
+
+部署完成后刷新网站，首页出现新增文字"自动部署验证：这是第二次推送后更新的内容。"，其效果见 2.6 的网站截图（该截图摄于第二次部署完成之后，页面底部即可看到这句话）。
+
+![网站首页出现第二次推送新增的文字](images/06-site-online.png)
 
 ## 3. 问题与解决
 
@@ -114,6 +120,6 @@ python -m mkdocs serve
 
 | 用途 | 链接 |
 | --- | --- |
-| 首次搭建并部署 | `（待填）` |
-| 二次修改验证自动更新 | `（待填）` |
+| 首次搭建并部署 | <https://github.com/czj-daniel-knox/SAD-homework03-202611/commit/a369533> |
+| 二次修改验证自动更新 | <https://github.com/czj-daniel-knox/SAD-homework03-202611/commit/ec2bf82> |
 | 补充报告 | `（待填）` |
