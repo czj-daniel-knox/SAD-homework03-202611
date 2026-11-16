@@ -122,4 +122,4 @@ python -m mkdocs serve
 | --- | --- |
 | 首次搭建并部署 | <https://github.com/czj-daniel-knox/SAD-homework03-202611/commit/a369533> |
 | 二次修改验证自动更新 | <https://github.com/czj-daniel-knox/SAD-homework03-202611/commit/ec2bf82> |
-| 补充报告 | `（待填）` |
+| 补充报告 | <https://github.com/czj-daniel-knox/SAD-homework03-202611/commit/51410fa> |
