@@ -5,3 +5,6 @@ __pycache__/
 .vscode/
 .idea/
 .DS_Store
+
+# Windows 文件夹配置
+desktop.ini
